@@ -12,6 +12,10 @@ hexo g
 ```
 hexo d
 ```
+本地预览
+```
+hexo s
+```
 创建新页面
 ```
 hexo new 'name'
@@ -20,4 +24,5 @@ hexo new 'name'
 ```
 hexo new page 'name'
 ```
+
 注意事项：json格式的配置 :后面要跟一个空格
