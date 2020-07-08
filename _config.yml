@@ -99,8 +99,8 @@ theme: hexo-theme-yilia
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: 'git'
-  repository: git@gitee.com:zhuzhiqiang/zhuzhiqiang.git
-  #repository: git@github.com:zhuzhiqiang18/zhuzhiqiang18.github.io.git
+  #repository: git@gitee.com:zhuzhiqiang/zhuzhiqiang.git
+  repository: git@github.com:zhuzhiqiang18/zhuzhiqiang18.github.io.git
   branch: master
 
 
