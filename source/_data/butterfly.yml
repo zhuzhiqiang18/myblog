@@ -10,11 +10,11 @@ menu:
   首页: / || fas fa-home
   归档: /archives/ || fas fa-archive
   标签: /tags/ || fas fa-tags
-  分类: /categories/ || fas fa-folder-open
+  #分类: /categories/ || fas fa-folder-open
   #List||fas fa-list:
    # - Music || /music/ || fas fa-music
    # - Movie || /movies/ || fas fa-video
-  友链: /link/ || fas fa-link
+  #友链: /link/ || fas fa-link
   #About: /about/ || fas fa-heart
 
 # Code Blocks (代碼相關)
@@ -82,11 +82,11 @@ katex:
 # --------------------------------------
 
 # Favicon（網站圖標）
-favicon: /img/favicon.png
+favicon: /static/favicon.png
 
 # Avatar (頭像)
 avatar:
-  img: /img/static/img/logo.jpeg
+  img: /static/img/logo.jpeg
   effect: false
 
 # the banner image of home page
@@ -115,9 +115,9 @@ category_img:
 
 cover:
   # display the cover or not (是否顯示文章封面)
-  index_enable: true
-  aside_enable: true
-  archives_enable: true
+  index_enable: false
+  aside_enable: false
+  archives_enable: false
   # the position of cover in home page (封面顯示的位置)
   # left/right/both
   position: both
@@ -576,8 +576,8 @@ aside:
     enable: true
     description:
   card_announcement:
-    enable: true
-    content: This is my Blog
+    enable: false
+    content: 公告
   card_recent_post:
     enable: true
     limit: 5 # if set 0 will show all
