@@ -1,0 +1,9 @@
+- class_name: 友情链接
+  class_desc: 博客
+  link_list:
+    - name: BlankSpace
+      link: https://blog.csdn.net/sinat_25926481
+      avatar: https://profile.csdnimg.cn/C/C/4/3_sinat_25926481
+      descr: 交流 学习 随笔
+
+

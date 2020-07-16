@@ -1,6 +1,7 @@
 ---
 title: 记一次ES查询调优（ES5.x）
 date: 2020-07-16 13:26:01
+tags: ES
 ---
 # 事由
 
@@ -9,7 +10,7 @@ date: 2020-07-16 13:26:01
 #排查
 
 分析DSL，看下DSL是否使用不当，一番检查后没有发现DSL异常。使用Search Profiler分析DSL，结果如下图：
-![1.png](1.png)
+![1.png](/img/es-search-improve/1.png)
 
 status=0 这个条件竟然使用了10.5ms 并且status类型是int 使用term查询，结果超乎想象。
 
@@ -26,7 +27,7 @@ Term Query由于通常非常快，从5.1.1开始不再被缓存到Query Cache**
 
 把status改为keyword结构后，搜索效率有一个质的飞跃
 
-![2.png](2.png)
+![2.png](/img/es-search-improve/2.png)
 
 建议，不做范围查找的字段都设置为keyword类型。
 
